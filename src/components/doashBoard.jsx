@@ -24,7 +24,7 @@ const Dashboard = () => {
         <li className="nav-item">
           <a className="nav-link" href="index.html">
             <i className="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span>
+            <span>Bảng điều khiển</span>
           </a>
         </li>
         <hr className="sidebar-divider" />
@@ -38,7 +38,7 @@ const Dashboard = () => {
             aria-controls="collapseTwo"
           >
             <i className="fas fa-fw fa-cog"></i>
-            <span>Components</span>
+            <span>Các thành phần</span>
           </a>
           <div
             id="collapseTwo"
@@ -67,7 +67,7 @@ const Dashboard = () => {
             aria-controls="collapseUtilities"
           >
             <i className="fas fa-fw fa-wrench"></i>
-            <span>Utilities</span>
+            <span>Tiện ích</span>
           </a>
           <div
             id="collapseUtilities"
@@ -105,7 +105,7 @@ const Dashboard = () => {
             aria-controls="collapsePages"
           >
             <i className="fas fa-fw fa-folder"></i>
-            <span>Pages</span>
+            <span>Trang</span>
           </a>
           <div
             id="collapsePages"
@@ -138,13 +138,13 @@ const Dashboard = () => {
         <li className="nav-item">
           <a className="nav-link" href="charts.html">
             <i className="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span>
+            <span>Biểu đồ</span>
           </a>
         </li>
         <li className="nav-item active">
           <a className="nav-link" href="tables.html">
             <i className="fas fa-fw fa-table"></i>
-            <span>Tables</span>
+            <span>Bảng</span>
           </a>
         </li>
         <hr className="sidebar-divider d-none d-md-block" />

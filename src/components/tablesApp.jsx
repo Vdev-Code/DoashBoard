@@ -20,7 +20,7 @@ const tablesApp = () => {
               <input
                 type="text"
                 className="form-control bg-light border-0 small"
-                placeholder="Search for..."
+                placeholder="Tìm kiếm..."
                 aria-label="Search"
                 aria-describedby="basic-addon2"
               />
@@ -277,26 +277,57 @@ const tablesApp = () => {
         <div className="container-fluid">
           <h1 className="h3 mb-2 text-gray-800">Tables</h1>
           <p className="mb-4">
-            DataTables is a third party plugin that is used to generate the demo
-            table below. For more information about DataTables, please visit the{" "}
-            <a target="_blank" href="https://datatables.net">
+            Dữ liệu nằm trong bảng hiển thị dưới đây.
+            {/* <a target="_blank" href="https://datatables.net">
               official DataTables documentation
-            </a>
+            </a> */}
             .
           </p>
           <div className="card shadow mb-4">
             <div className="card-header py-3">
               <h6 className="m-0 font-weight-bold text-primary">
-                DataTables Example
+              Bảng dữ liệu
               </h6>
             </div>
             <div className="card-body">
+              <div className="row">
+                <div className="col-sm-12 col-md-6">
+                  <div className="dataTables_length " id="dataTable_length">
+                    <label className="">
+                      Show{" "}
+                      <select
+                        name="dataTable_length"
+                        aria-controls="dataTable"
+                        className="custom-select custom-select-sm form-control form-control-sm"
+                      >
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                      </select>{" "}
+                      mục
+                    </label>
+                  </div>
+                </div>
+                <div className="col-sm-12 col-md-6">
+                  <div id="dataTable_filter" className="dataTables_filter">
+                    <label>
+                    Tìm kiếm:
+                      <input
+                        type="search"
+                        className="form-control form-control-sm"
+                        placeholder=""
+                        aria-controls="dataTable"
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
               <div className="table-responsive">
                 <table
                   className="table table-bordered"
                   id="dataTable"
                   width="100%"
-                  cellspacing="0"
                 >
                   <thead>
                     <tr>
